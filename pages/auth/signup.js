@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { User, Check, Camera } from 'lucide-react';
 import Head from 'next/head';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
+
 
 export default function SignupPage() {
   const [step, setStep] = useState(1);
@@ -11,7 +13,7 @@ export default function SignupPage() {
     if (step < 3) {
       setStep(step + 1);
     } else {
-      window.location.href = &apos;/auth/login&apos;;
+        router.push('/auth/login');
     }
   };
   
@@ -121,7 +123,7 @@ export default function SignupPage() {
                         </p>
                         <button
                             className="w-full bg-blue-600 text-white font-semibold py-2 px-6 rounded-md hover:bg-blue-700 transition"
-                            onClick={() => window.location.href = '/auth/login'}
+                            onClick={() => router.push() = '/auth/login'}
                         >
                             Sign In
                         </button>
