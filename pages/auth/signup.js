@@ -123,7 +123,7 @@ export default function SignupPage() {
                         </p>
                         <button
                             className="w-full bg-blue-600 text-white font-semibold py-2 px-6 rounded-md hover:bg-blue-700 transition"
-                            onClick={() => router.push() = '/auth/login'}
+                            onClick={() => router.push('/auth/login')}
                         >
                             Sign In
                         </button>
